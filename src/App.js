@@ -27,7 +27,7 @@ export default function App() {
       return;
     }
 
-    setContact(p => [...p, newContact]);
+    setContact(prevContact => [...prevContact, newContact]);
   };
 
   const removeContact = id => {
